@@ -106,7 +106,7 @@ Tested on Ubuntu 22.04.
    localityName_default        = $CERTIFICATE_LOCALITY
    organizationName            = Organization Name (eg, company)
    organizationName_default    = $CERTIFICATE_ORGANIZATION
-   commonName                  = Common Name (e.g. server FQDN or YOUR   name)
+   commonName                  = Common Name (e.g. server FQDN or YOUR name)
    commonName_default          = $NSX_MANAGER_FQDN
    emailAddress                = Email Address
    emailAddress_default        = $CERTIFICATE_EMAIL
