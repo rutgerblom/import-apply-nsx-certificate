@@ -108,7 +108,7 @@ Tested on Ubuntu 22.04.
    organizationName                = Organization Name (eg, company)
    organizationName_default        = $CERTIFICATE_ORGANIZATION
    organizationalUnitName          = Organizational Unit Name (eg, department)
-   organizationalUnitName_default  = CERTIFICATE_ORGANIZATIONAL_UNIT
+   organizationalUnitName_default  = $CERTIFICATE_ORGANIZATIONAL_UNIT
    commonName                      = Common Name (e.g. server FQDN or YOUR name)
    commonName_default              = $NSX_MANAGER_FQDN
    emailAddress                    = Email Address
