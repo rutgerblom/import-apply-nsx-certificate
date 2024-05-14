@@ -51,6 +51,7 @@ Tested on Ubuntu 22.04.
    export CERTIFICATE_STATE="Lund"
    export CERTIFICATE_LOCALITY="Lund"
    export CERTIFICATE_ORGANIZATION="HomeLab"
+   export CERTIFICATE_ORGANIZATIONAL_UNIT="IT"
    export CERTIFICATE_EMAIL="pki-admin@$NSX_MANAGER_DOMAIN_NAME"
    export CERTIFICATE_CNF_FILE=~/$NSX_MANAGER_FQDN.cnf
    export CERTIFICATE_WORKING_DIR="/tmp/"
@@ -98,18 +99,20 @@ Tested on Ubuntu 22.04.
    string_mask        = utf8only
    
    [ subject ]
-   countryName                 = Country Name (2 letter code)
-   countryName_default         = $CERTIFICATE_COUNTRY
-   stateOrProvinceName         = State or Province Name (full name)
-   stateOrProvinceName_default = $CERTIFICATE_STATE
-   localityName                = Locality Name (eg, city)
-   localityName_default        = $CERTIFICATE_LOCALITY
-   organizationName            = Organization Name (eg, company)
-   organizationName_default    = $CERTIFICATE_ORGANIZATION
-   commonName                  = Common Name (e.g. server FQDN or YOUR name)
-   commonName_default          = $NSX_MANAGER_FQDN
-   emailAddress                = Email Address
-   emailAddress_default        = $CERTIFICATE_EMAIL
+   countryName                     = Country Name (2 letter code)
+   countryName_default             = $CERTIFICATE_COUNTRY
+   stateOrProvinceName             = State or Province Name (full name)
+   stateOrProvinceName_default     = $CERTIFICATE_STATE
+   localityName                    = Locality Name (eg, city)
+   localityName_default            = $CERTIFICATE_LOCALITY
+   organizationName                = Organization Name (eg, company)
+   organizationName_default        = $CERTIFICATE_ORGANIZATION
+   organizationalUnitName          = Organizational Unit Name (eg, department)
+   organizationalUnitName_default  = CERTIFICATE_ORGANIZATIONAL_UNIT
+   commonName                      = Common Name (e.g. server FQDN or YOUR name)
+   commonName_default              = $NSX_MANAGER_FQDN
+   emailAddress                    = Email Address
+   emailAddress_default            = $CERTIFICATE_EMAIL
    
    [ req_ext ]
    subjectKeyIdentifier = hash
